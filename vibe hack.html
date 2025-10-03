@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BMIET Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>BMIET Interactive Page</h1>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <section class="accordion-section">
+      <h2>FAQs</h2>
+      <div class="accordion">
+        <button class="accordion-button">What is BMIET?</button>
+        <div class="accordion-content">
+          <p>BMIET is a platform for hackathons and online competitions.</p>
+        </div>
+      </div>
+      <div class="accordion">
+        <button class="accordion-button">How to participate?</button>
+        <div class="accordion-content">
+          <p>Login, follow instructions, and submit your work within the time frame.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Feedback Form</h2>
+      <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="formResponse"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

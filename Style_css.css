@@ -1,0 +1,92 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  background-color: #003399;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0055cc;
+}
+
+.accordion-section {
+  margin-bottom: 20px;
+}
+
+.accordion-button {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #003399;
+  background-color: #e6e6ff;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+  border-left: 1px solid #003399;
+  border-right: 1px solid #003399;
+  border-bottom: 1px solid #003399;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#formResponse {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #222;
+  color: #eee;
+}
+
+body.dark-mode .accordion-button {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark-mode input, body.dark-mode textarea {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
